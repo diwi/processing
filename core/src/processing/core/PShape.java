@@ -29,6 +29,33 @@ import processing.core.PApplet;
 
 
 /**
+ * TODOs:
+ *
+ * Object user_ptr;
+ *
+ * void removeChild(PShape child);
+ * void removeChildren(PShape ... child);
+ * PMatrix getMatrix();
+ * void setMatrix(PMatrix mat);
+ * PShape copy();
+ * PShape copy(PShape src);
+ * getColor, getFill, etc... getStyle
+ *
+ * PShape[] getChildren(boolean crop) {
+ *
+ * float[][] getVertexData();
+ *
+ * release(), delete(), etc...
+ *
+ * shapeMode() not working?
+ *
+ * Style struct, for easier manipulation, ...?
+ *
+ */
+
+
+
+/**
  * ( begin auto-generated from PShape.xml )
  *
  * Datatype for storing shapes. Processing can currently load and display
@@ -2387,14 +2414,14 @@ public class PShape implements PConstants {
  /**
    * ( begin auto-generated from PShape_setFill.xml )
    *
-   * The <b>setFill()</b> method defines the fill color of a <b>PShape</b>. 
-   * This method is used after shapes are created or when a shape is defined explicitly 
-   * (e.g. <b>createShape(RECT, 20, 20, 80, 80)</b>) as shown in the above example. 
-   * When a shape is created with <b>beginShape()</b> and <b>endShape()</b>, its 
-   * attributes may be changed with <b>fill()</b> and <b>stroke()</b> within 
-   * <b>beginShape()</b> and <b>endShape()</b>. However, after the shape is 
-   * created, only the <b>setFill()</b> method can define a new fill value for 
-   * the <b>PShape</b>. 
+   * The <b>setFill()</b> method defines the fill color of a <b>PShape</b>.
+   * This method is used after shapes are created or when a shape is defined explicitly
+   * (e.g. <b>createShape(RECT, 20, 20, 80, 80)</b>) as shown in the above example.
+   * When a shape is created with <b>beginShape()</b> and <b>endShape()</b>, its
+   * attributes may be changed with <b>fill()</b> and <b>stroke()</b> within
+   * <b>beginShape()</b> and <b>endShape()</b>. However, after the shape is
+   * created, only the <b>setFill()</b> method can define a new fill value for
+   * the <b>PShape</b>.
    *
    * ( end auto-generated )
    *
@@ -2543,14 +2570,14 @@ public class PShape implements PConstants {
   /**
    * ( begin auto-generated from PShape_setStroke.xml )
    *
-   * The <b>setStroke()</b> method defines the outline color of a <b>PShape</b>. 
-   * This method is used after shapes are created or when a shape is defined 
-   * explicitly (e.g. <b>createShape(RECT, 20, 20, 80, 80)</b>) as shown in 
-   * the above example. When a shape is created with <b>beginShape()</b> and 
-   * <b>endShape()</b>, its attributes may be changed with <b>fill()</b> and 
-   * <b>stroke()</b> within <b>beginShape()</b> and <b>endShape()</b>. 
-   * However, after the shape is created, only the <b>setStroke()</b> method 
-   * can define a new stroke value for the <b>PShape</b>. 
+   * The <b>setStroke()</b> method defines the outline color of a <b>PShape</b>.
+   * This method is used after shapes are created or when a shape is defined
+   * explicitly (e.g. <b>createShape(RECT, 20, 20, 80, 80)</b>) as shown in
+   * the above example. When a shape is created with <b>beginShape()</b> and
+   * <b>endShape()</b>, its attributes may be changed with <b>fill()</b> and
+   * <b>stroke()</b> within <b>beginShape()</b> and <b>endShape()</b>.
+   * However, after the shape is created, only the <b>setStroke()</b> method
+   * can define a new stroke value for the <b>PShape</b>.
    *
    * ( end auto-generated )
    *
