@@ -51,6 +51,9 @@ import processing.core.PApplet;
  *
  * Style struct, for easier manipulation, ...?
  *
+ *
+ * matrix transformations are applied in reverse, different to PShapeOpenGL
+ *
  */
 
 
